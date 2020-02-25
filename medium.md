@@ -1,8 +1,8 @@
 ---
 layout: post
-title: Generic
-description: Lorem ipsum dolor est
-image: assets/images/pic11.jpg
+title: Medium Stories
+description: My opinions on science topics
+image: assets/images/medium.jpg
 nav-menu: true
 ---
 

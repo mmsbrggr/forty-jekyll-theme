@@ -1,6 +1,8 @@
 ---
 layout: page
-title: Elements
+title: Academic Record
+description: What I did and do in academia
+image: assets/images/academic.jpg
 nav-menu: true
 ---
 

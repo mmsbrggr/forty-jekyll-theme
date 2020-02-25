@@ -5,16 +5,9 @@ email: marcel.moosbrugger@tuwien.ac.at
 description: Computer science researcher interested in<br /> AI, Formal Methods and science communication
 baseurl: "/" # the subpath of your site, e.g. /blog
 url: # the base hostname & protocol for your site
-author:
-street_address:
-city:
-state:
-zip_code:
-country:
-phone:
+author: Marcel Moosbrugger
 
 # homepage tiles
-tiles-source: pages # accepts "posts" or "pages"
 tiles-count: 6
 
 # social settings
@@ -22,13 +15,6 @@ github_url: https://github.com/mmsbrggr
 linkedin_url: https://www.linkedin.com/in/marcel-moosbrugger
 twitter_url: https://twitter.com/mmsbrggr
 medium_url: https://medium.com/@mmsbrggr
-500px_url:
-facebook_url:
-gitlab_url:
-googleplus_url:
-instagram_url:
-pinterest_url:
-slack_url:
 
 # build settings
 markdown: kramdown
