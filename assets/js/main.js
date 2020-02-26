@@ -169,6 +169,7 @@
 						$link = $link.add($x);
 
 						$link.on('click', function(event) {
+							if ($link.attr('target') === '_blank') return;
 
 							var href = $link.attr('href');
 
@@ -176,20 +177,22 @@
 								event.stopPropagation();
 								event.preventDefault();
 
-							// Start transitioning.
+							if (href.startsWith('#')){
+								$('html, body').animate({
+									scrollTop: $(href).offset().top
+								}, 500, function() {
+									location.href = href;
+								});
+							} else {
+								// Start transitioning.
 								$this.addClass('is-transitioning');
 								$wrapper.addClass('is-transitioning');
 
-							// Redirect.
+								// Redirect.
 								window.setTimeout(function() {
-
-									if ($link.attr('target') == '_blank')
-										window.open(href);
-									else
-										location.href = href;
-
+									location.href = href;
 								}, 500);
-
+							}
 						});
 
 					}

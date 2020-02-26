@@ -20,8 +20,11 @@
             </header>
             <div class="content">
                 <p style="text-transform: uppercase;">{{ site.description }}</p>
-                {% include social.html %}
+                <ul class="actions">
+                    <li><a role="button" tabindex="0" href="#" class="button mail-me">Get in touch</a></li>
+                </ul>
             </div>
+            {% include social.html %}
         </div>
     </section>
 
@@ -30,6 +33,18 @@
 
         <!-- One -->
         {% include tiles.html %}
+
+        <!-- front pages -->
+        {% for fp in site.frontpages %}
+            <section id="{{ fp.iid }}">
+                <div class="inner">
+                    <header class="major">
+                        <h2>{{ fp.title }}</h2>
+                    </header>
+                    {{ fp.content }}
+                </div>
+            </section>
+        {% endfor %}
 
     </div>
 

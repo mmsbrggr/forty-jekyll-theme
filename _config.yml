@@ -16,6 +16,10 @@ linkedin_url: https://www.linkedin.com/in/marcel-moosbrugger
 twitter_url: https://twitter.com/mmsbrggr
 medium_url: https://medium.com/@mmsbrggr
 
+collections:
+  - frontpages
+  - medium
+
 # build settings
 markdown: kramdown
 
