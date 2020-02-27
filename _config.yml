@@ -3,8 +3,8 @@ title: Marcel Moosbrugger
 subtitle:
 email: marcel.moosbrugger@tuwien.ac.at
 description: Computer science researcher interested in<br /> AI, Formal Methods and science communication
-baseurl: "/" # the subpath of your site, e.g. /blog
-url: # the base hostname & protocol for your site
+baseurl: "" # the subpath of your site, e.g. /blog
+url: https://marcelmoos.com # the base hostname & protocol for your site
 author: Marcel Moosbrugger
 
 # homepage tiles
