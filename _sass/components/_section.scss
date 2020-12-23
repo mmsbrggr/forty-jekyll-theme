@@ -18,8 +18,9 @@
 			width: -webkit-max-content;
 			width: -ms-max-content;
 			width: max-content;
-      max-width: 100%;
+      		max-width: 100%;
 			margin-bottom: _size(element-margin);
+			position: relative;
 
 			> :first-child {
 				  margin-bottom: 0;
@@ -56,6 +57,23 @@
 					}
 				}
 			}
+
+			.my-head {
+				display: block;
+				position: absolute;
+				bottom: 2px;
+				right: 0;
+				width: 350px;
+				z-index: -1;
+			}
+		}
+
+		@include breakpoint(xlarge) {
+			&.major {
+				.my-head {
+					width: 250px;
+				}
+			}
 		}
 
 		@include breakpoint(small) {
@@ -64,6 +82,10 @@
 					br {
 						display: none;
 					}
+				}
+
+				.my-head {
+					width: 150px;
 				}
 			}
 		}

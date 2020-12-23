@@ -1,7 +1,6 @@
 {% assign frontpages = site.frontpages %}
 {% assign pages = site.html_pages | where_exp: "item", "item.show_tile != false" %}
-{% assign posts = (site.medium  | sort: 'name') | reverse %}
-{% assign tiles = pages | concat: posts %}
+{% assign tiles = pages %}
 {% assign tiles = frontpages | concat: tiles %}
 <section id="one" class="tiles">
   {% for tile in tiles limit:site.tiles-count %}
