@@ -10,5 +10,7 @@ Probabilistic Programs, Machine Learning, and stochastic systems are all around 
 
 I am currently working on the [ProbInG](https://probing-lab.github.io/) project.
 
+Moreover, I am part of the [forsyste research unit](https://forsyte.at/people/moosbrugger/).
+
 For more details see my [academic CV]({{ site.baseurl }}{% link /assets/cv.pdf %}).
 
