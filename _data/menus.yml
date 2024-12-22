@@ -1,0 +1,133 @@
+toc:
+  - title: Home
+    subfolderitems:
+      - page: Creative Agency
+        url: /
+
+      - page: Digital Agency
+        url: /home-digital-agency
+
+      - page: Digital Agency Dark
+        url: /home-digital-agency-dark
+
+      - page: Freelancer Portfolio
+        url: /home-freelancer-portfolio
+
+      - page: Personal Portfolio
+        url: /home-personal-portfolio
+
+      - page: Photography Studio
+        url: /home-photography-studio
+
+  - title: About
+    subfolderitems:
+      - page: About V1
+        url: /about
+
+      - page: About V2
+        url: /about-2
+
+      - page: About V3
+        url: /about-3
+
+      - page: About V4
+        url: /about-4
+
+      - page: About V5
+        url: /about-5
+
+  - title: Services
+    subfolderitems:
+      - page: Services V1
+        url: /service
+
+      - page: Services V2
+        url: /service-2
+
+      - page: Services V3
+        url: /service-3
+
+      - page: Services V4
+        url: /service-4
+
+  - title: Portfolio
+    subfolderitems:
+      - page: Portfolio Default
+        url: /portfolio
+
+      - page: Portfolio Grid
+        subsubfolderitems:
+          - page: Portfolio Grid V1
+            url: /portfolio-grid
+
+          - page: Portfolio Grid V2
+            url: /portfolio-grid-2
+
+      - page: Portfolio Masonary
+        url: /portfolio-masonry
+
+      - page: Portfolio Split
+        subsubfolderitems:
+          - page: Portfolio Split
+            url: /portfolio-list-layout
+
+          - page: Portfolio Split V2
+            url: /portfolio-boxed
+
+          - page: Portfolio Split V3
+            url: /portfolio-list-layout-2
+
+          - page: Portfolio Split V4
+            url: /portfolio-list-layout-3
+
+      - page: Portfolio Details
+        subsubfolderitems:
+          - page: Portfolio Details V1
+            url: /portfolio-details
+
+          - page: Portfolio Details V2
+            url: /portfolio-details-2
+
+  - title: Blog
+    subfolderitems:
+      - page: Blog Standard
+        url: /blog
+
+      - page: Blog Grid
+        subsubfolderitems:
+          - page: Blog Grid
+            url: /blog-grid
+
+          - page: Blog Grid
+            url: /blog-grid-2
+
+      - page: Blog Masonary
+        url: /blog-masonry
+
+      - page: Blog Details
+        subsubfolderitems:
+          - page: Blog Details V1
+            url: /blog-details
+
+          - page: Blog Details V2
+            url: /blog-details-2
+
+          - page: Blog Details V3
+            url: /blog-details-3
+
+  - title: Contact
+    subfolderitems:
+    - page: Contact V1
+      url: /contact
+
+    - page: Contact V2
+      url: /contact-2
+
+    - page: Contact V3
+      url: /contact-3
+
+    - page: Contact V4
+      url: /contact-4
+
+    - page: Contact V5
+      url: /contact-5

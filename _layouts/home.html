@@ -1,57 +1,18 @@
-<!DOCTYPE html>
-<!--
-	Forty by HTML5 UP
-	html5up.net | @ajlkn
-	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
--->
-<html>
-
-{% include head.html %}
-
-<body>
-
-    {% include header.html %}
-
-    <!-- Banner -->
-    <section id="banner" class="major">
-        <div class="inner">
-            <header class="major">
-                <h1>{{ page.landing-title }}</h1>
-                <img class="my-head" alt="Marcel Moosbrugger" src="/assets/images/marcel-nobg-grey.png" />
-            </header>
-            <div class="content">
-                <p style="text-transform: uppercase;">{{ site.description }}</p>
-                <ul class="actions">
-                    <li><a role="button" tabindex="0" href="#" class="button mail-me">Get in touch</a></li>
-                    <li><a role="button" tabindex="0" href="/newsletter" target="_blank" class="button">Newsletter</a></li>
-                </ul>
-            </div>
-            {% include social.html %}
-        </div>
-    </section>
-
-    <!-- Main -->
-    <div id="main">
-
-        <!-- One -->
-        {% include tiles.html %}
-
-        <!-- front pages -->
-        {% for fp in site.frontpages %}
-            <section id="{{ fp.iid }}">
-                <div class="inner">
-                    <header class="major">
-                        <h2>{{ fp.title }}</h2>
-                    </header>
-                    {{ fp.content }}
-                </div>
-            </section>
-        {% endfor %}
-
-    </div>
-
-    {% include footer.html %}
-
-</body>
-
-</html>
+---
+layout: default
+---
+{% include header/header.html %}
+<!-- main body - start
+      ================================================== -->
+<main>
+	{% include offcanvas/offcanvas.html %}
+	{% include banner/banner.html %}
+	{% include portfolio/portfolio.html %}
+	{% include service/service.html %}
+	{% include award-and-recognition/award-and-recognition.html %}
+	{% include client/client.html %}
+	{% include contact/contact.html %}
+</main>
+<!-- main body - end
+      ================================================== -->
+{% include footer/footer.html %}

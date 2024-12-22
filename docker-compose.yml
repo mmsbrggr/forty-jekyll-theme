@@ -1,9 +1,9 @@
-version: '2.4'
-
 services:
   jekyll:
-    image: bretfisher/jekyll-serve
+    image: jekyll/jekyll
     volumes:
-      - .:/site
+      - .:/srv/jekyll
+      - ./vendor/bundle/:/usr/local/bundle
     ports:
-      - '8080:4000'
+      - "4000:4000"
+    command: jekyll serve --force_polling --drafts

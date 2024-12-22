@@ -1,27 +1,160 @@
-# site settings
-title: Marcel Moosbrugger
-subtitle:
-email: marcel.moosbrugger@tuwien.ac.at
-description: Computer science researcher interested in<br /> AI, Formal Methods and science communication
-baseurl: "" # the subpath of your site, e.g. /blog
-url: https://marcelmoos.com # the base hostname & protocol for your site
-author: Marcel Moosbrugger
+baseurl: ""
+url: ""
 
-# homepage tiles
-tiles-count: 6
+collections_dir: collections
+permalink: pretty
 
-# social settings
-github_url: https://github.com/mmsbrggr
-linkedin_url: https://www.linkedin.com/in/marcel-moosbrugger
-twitter_url: https://twitter.com/mmsbrggr
-medium_url: https://medium.com/@mmsbrggr
+exclude:
+  - docker-compose.yml
+  - README.md
+  - .gitignore
 
 collections:
-  - frontpages
-  - medium
+  portfolio:
+    output: true
+    permalink: "/portfolio/:slug"
+  portfolio-grid-v1:
+    output: true
+    permalink: "/portfolio-grid/:slug"
+  portfolio-grid-v2:
+    output: true
+    permalink: "/portfolio-grid-2/:slug"
+  portfolio-masonry:
+    output: true
+    permalink: "/portfolio-masonry/:slug"
+  portfolio-list-layout:
+    output: true
+    permalink: "/portfolio-list-layout/:slug"
+  portfolio-list-layout-2:
+    output: true
+    permalink: "/portfolio-list-layout-2/:slug"
+  portfolio-list-layout-3:
+    output: true
+    permalink: "/portfolio-list-layout-3/:slug"
+  portfolio-boxed:
+    output: true
+    permalink: "/portfolio-boxed/:slug"
+  pages:
+    output: true
+    permalink: "/:name"
+  posts:
+    output: true
+    permalink: "/blog/:slug"
+    type: "post"
+  blog-grid:
+    output: true
+    permalink: "/blog-grid/:slug"
+    type: "post"
+  blog-grid-2:
+    output: true
+    permalink: "/blog-grid-2/:slug"
+    type: "post"
+  blog-masonry:
+    output: true
+    permalink: "/blog-masonry/:slug"
+    type: "post"
 
-# build settings
+defaults:
+  -
+    scope:
+      path: ""
+    values:
+      layout: "default"
+  -
+    scope:
+      path: ""
+      type: "pages"
+    values:
+      layout: "default"
+
+  -
+    scope:
+      path: ""
+      type: "portfolio"
+    values:
+      layout: "portfolio-details"
+
+  -
+    scope:
+      path: ""
+      type: "portfolio-grid-v1"
+    values:
+      layout: "portfolio-details"
+
+  -
+    scope:
+      path: ""
+      type: "portfolio-grid-v2"
+    values:
+      layout: "portfolio-details"
+
+  -
+    scope:
+      path: ""
+      type: "portfolio-grid-v1"
+    values:
+      layout: "portfolio-details"
+
+  -
+    scope:
+      path: ""
+      type: "portfolio-boxed"
+    values:
+      layout: "portfolio-details"
+
+  -
+    scope:
+      path: ""
+      type: "posts"
+    values:
+      layout: "post"
+
+  -
+    scope:
+      path: ""
+      type: "blog-grid"
+    values:
+      layout: "post-2"
+
+  -
+    scope:
+      path: ""
+      type: "blog-grid-2"
+    values:
+      layout: "post-3"
+
+  -
+    scope:
+      path: ""
+      type: "blog-masonry"
+    values:
+      layout: "post"
+
 markdown: kramdown
 
+kramdown:
+  input: GFM
+  syntax_highlighter: rouge
+
 sass:
+  sass_dir: _sass
   style: compressed
+
+gems:
+  - jekyll-paginate
+  - jekyll-feed
+  - jekyll-sitemap
+
+paginate_path: "/blog/page:num/"
+paginate: 4
+
+# Disqus Comments
+disqus:
+  enable: false # disque is enabled. Set as false to disable it
+  # Leave shortname blank to disable comments site-wide.
+  # Disable comments for any post by adding `comments: false` to that post's YAML Front Matter.
+  shortname: dexfolio
+
+google_maps:
+  enable: true
+  code: '<iframe width="600" height="500" id="gmap_canvas" src="https://maps.google.com/maps?q=%2016122%20Collins%20St&t=&z=9&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe>'

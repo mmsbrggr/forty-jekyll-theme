@@ -1,0 +1,234 @@
+---
+layout: default
+
+############################ Sidebar ##################################
+sidebar:
+  title: "The standard chunk of Lorem Ipsum used"
+  description: "There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable."
+  button:
+    link: "/about"
+    label: "Learn More"
+---
+{% include header/header-2.html %}
+<!-- main body - start
+      ================================================== -->
+<main>
+	{% include sidebar.html %}
+	{% include breadcrumb/breadcrumb.html %}
+	<!-- blog_section - start
+        ================================================== -->
+	<section class="blog_section section_space bg_gray_2">
+		<div class="container maxwidth_1440">
+			<ul class="filter-btns-group ul_li_center">
+				<li><button class="active" type="button" data-filter="*">All</button></li>
+				<li><button type="button" data-filter=".business">Business</button></li>
+				<li><button type="button" data-filter=".photography">Photography</button></li>
+				<li><button type="button" data-filter=".motion_design">Motion Design</button></li>
+				<li><button type="button" data-filter=".marketing">Marketing</button></li>
+				<li><button type="button" data-filter=".branding">Branding</button></li>
+			</ul>
+			<div class="masonry_portfolio blog_3col_masonry">
+				<div class="element-item business" data-category="business">
+					<div class="blog_grid">
+						<a class="item_image" href="{{ "blog-details" | relative_url }}">
+							<img src="/assets/images/blog/blog_img_6.jpg" alt="Blog Image">
+						</a>
+						<div class="item_content">
+							<div class="post_date">June 27th, 2022</div>
+							<h3 class="item_title">
+								<a href="{{ "blog-details" | relative_url }}">
+									Over of computers are infected with adware
+								</a>
+							</h3>
+							<a class="btn_text" href="{{ "blog-details" | relative_url }}"><span>Read more</span></a>
+						</div>
+					</div>
+				</div>
+				<div class="element-item photography" data-category="photography">
+					<div class="blog_grid">
+						<a class="item_image" href="{{ "blog-details" | relative_url }}">
+							<img src="/assets/images/blog/blog_img_7.jpg" alt="Blog Image">
+						</a>
+						<div class="item_content">
+							<div class="post_date">June 27th, 2022</div>
+							<h3 class="item_title">
+								<a href="{{ "blog-details" | relative_url }}">
+									Over of computers are infected with adware
+								</a>
+							</h3>
+							<a class="btn_text" href="{{ "blog-details" | relative_url }}"><span>Read more</span></a>
+						</div>
+					</div>
+				</div>
+				<div class="element-item motion_design" data-category="motion_design">
+					<div class="blog_grid">
+						<a class="item_image" href="{{ "blog-details" | relative_url }}">
+							<img src="/assets/images/blog/blog_img_8.jpg" alt="Blog Image">
+						</a>
+						<div class="item_content">
+							<div class="post_date">June 27th, 2022</div>
+							<h3 class="item_title">
+								<a href="{{ "blog-details" | relative_url }}">
+									Over of computers are infected with adware
+								</a>
+							</h3>
+							<a class="btn_text" href="{{ "blog-details" | relative_url }}"><span>Read more</span></a>
+						</div>
+					</div>
+				</div>
+				<div class="element-item marketing" data-category="marketing">
+					<div class="blog_grid">
+						<a class="item_image" href="{{ "blog-details" | relative_url }}">
+							<img src="/assets/images/blog/blog_img_9.jpg" alt="Blog Image">
+						</a>
+						<div class="item_content">
+							<div class="post_date">June 27th, 2022</div>
+							<h3 class="item_title">
+								<a href="{{ "blog-details" | relative_url }}">
+									Over of computers are infected with adware
+								</a>
+							</h3>
+							<a class="btn_text" href="{{ "blog-details" | relative_url }}"><span>Read more</span></a>
+						</div>
+					</div>
+				</div>
+				<div class="element-item business " data-category="business">
+					<div class="blog_grid">
+						<a class="item_image" href="{{ "blog-details" | relative_url }}">
+							<img src="/assets/images/blog/blog_img_11.jpg" alt="Blog Image">
+						</a>
+						<div class="item_content">
+							<div class="post_date">June 27th, 2022</div>
+							<h3 class="item_title">
+								<a href="{{ "blog-details" | relative_url }}">
+									Over of computers are infected with adware
+								</a>
+							</h3>
+							<a class="btn_text" href="{{ "blog-details" | relative_url }}"><span>Read more</span></a>
+						</div>
+					</div>
+				</div>
+				<div class="element-item branding" data-category="branding">
+					<div class="blog_grid">
+						<a class="item_image" href="{{ "blog-details" | relative_url }}">
+							<img src="/assets/images/blog/blog_img_10.jpg" alt="Blog Image">
+						</a>
+						<div class="item_content">
+							<div class="post_date">June 27th, 2022</div>
+							<h3 class="item_title">
+								<a href="{{ "blog-details" | relative_url }}">
+									Over of computers are infected with adware
+								</a>
+							</h3>
+							<a class="btn_text" href="{{ "blog-details" | relative_url }}"><span>Read more</span></a>
+						</div>
+					</div>
+				</div>
+				<div class="element-item photography " data-category="photography">
+					<div class="blog_grid">
+						<a class="item_image" href="{{ "blog-details" | relative_url }}">
+							<img src="/assets/images/blog/blog_img_12.jpg" alt="Blog Image">
+						</a>
+						<div class="item_content">
+							<div class="post_date">June 27th, 2022</div>
+							<h3 class="item_title">
+								<a href="{{ "blog-details" | relative_url }}">
+									Over of computers are infected with adware
+								</a>
+							</h3>
+							<a class="btn_text" href="{{ "blog-details" | relative_url }}"><span>Read more</span></a>
+						</div>
+					</div>
+				</div>
+				<div class="element-item motion_design " data-category="motion_design">
+					<div class="blog_grid">
+						<a class="item_image" href="{{ "blog-details" | relative_url }}">
+							<img src="/assets/images/blog/blog_img_13.jpg" alt="Blog Image">
+						</a>
+						<div class="item_content">
+							<div class="post_date">June 27th, 2022</div>
+							<h3 class="item_title">
+								<a href="{{ "blog-details" | relative_url }}">
+									Over of computers are infected with adware
+								</a>
+							</h3>
+							<a class="btn_text" href="{{ "blog-details" | relative_url }}"><span>Read more</span></a>
+						</div>
+					</div>
+				</div>
+				<div class="element-item marketing " data-category="marketing">
+					<div class="blog_grid">
+						<a class="item_image" href="{{ "blog-details" | relative_url }}">
+							<img src="/assets/images/blog/blog_img_14.jpg" alt="Blog Image">
+						</a>
+						<div class="item_content">
+							<div class="post_date">June 27th, 2022</div>
+							<h3 class="item_title">
+								<a href="{{ "blog-details" | relative_url }}">
+									Over of computers are infected with adware
+								</a>
+							</h3>
+							<a class="btn_text" href="{{ "blog-details" | relative_url }}"><span>Read more</span></a>
+						</div>
+					</div>
+				</div>
+				<div class="element-item branding " data-category="branding">
+					<div class="blog_grid">
+						<a class="item_image" href="{{ "blog-details" | relative_url }}">
+							<img src="/assets/images/blog/blog_img_15.jpg" alt="Blog Image">
+						</a>
+						<div class="item_content">
+							<div class="post_date">June 27th, 2022</div>
+							<h3 class="item_title">
+								<a href="{{ "blog-details" | relative_url }}">
+									Over of computers are infected with adware
+								</a>
+							</h3>
+							<a class="btn_text" href="{{ "blog-details" | relative_url }}"><span>Read more</span></a>
+						</div>
+					</div>
+				</div>
+				<div class="element-item branding" data-category="branding">
+					<div class="blog_grid">
+						<a class="item_image" href="{{ "blog-details" | relative_url }}">
+							<img src="/assets/images/blog/blog_img_17.jpg" alt="Blog Image">
+						</a>
+						<div class="item_content">
+							<div class="post_date">June 27th, 2022</div>
+							<h3 class="item_title">
+								<a href="{{ "blog-details" | relative_url }}">
+									Over of computers are infected with adware
+								</a>
+							</h3>
+							<a class="btn_text" href="{{ "blog-details" | relative_url }}"><span>Read more</span></a>
+						</div>
+					</div>
+				</div>
+				<div class="element-item business" data-category="business">
+					<div class="blog_grid">
+						<a class="item_image" href="{{ "blog-details" | relative_url }}">
+							<img src="/assets/images/blog/blog_img_16.jpg" alt="Blog Image">
+						</a>
+						<div class="item_content">
+							<div class="post_date">June 27th, 2022</div>
+							<h3 class="item_title">
+								<a href="{{ "blog-details" | relative_url }}">
+									Over of computers are infected with adware
+								</a>
+							</h3>
+							<a class="btn_text" href="{{ "blog-details" | relative_url }}"><span>Read more</span></a>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="load_more text-center">
+				<a class="btn_text" href="#!"><span class="border-0">…LOAD MORE…</span></a>
+			</div>
+		</div>
+	</section>
+	<!-- blog_section - end
+        ================================================== -->
+</main>
+<!-- main body - end
+      ================================================== -->
+{% include footer/footer-1.html %}
