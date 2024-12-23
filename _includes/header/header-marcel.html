@@ -1,0 +1,29 @@
+<!-- header_section - start
+      ================================================== -->
+	  <header class="header_section header_style_2 white_content marcel">
+		<nav class="main_menu navbar navbar-expand-lg">
+			<div class="brand_logo">
+				<a class="brand_text_link" href="{{ site.baseurl }}/">
+					Marcel Moosbrugger
+				</a>
+			</div>
+			<!-- single level navigation
+     		 ================================================== -->
+			<div class="main_menu_inner collapse navbar-collapse" id="main_menu_dropdown">
+				<ul class="main_menu_list ul_li text-uppercase">
+					{% for item in site.data.menus.toc %}
+					<li class="nav-item">
+						<a class="nav-link" href="{{ item.url | default: # }}" id="{{ item.title }}">
+							{{ item.title }}
+						</a>
+					</li>
+					{% endfor %}
+				</ul>
+			</div>
+			<button class="mobile_menu_btn navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#main_menu_dropdown" aria-controls="main_menu_dropdown" aria-expanded="false" aria-label="Toggle navigation">
+				<i class="fal fa-bars"></i>
+			</button>
+		</nav>
+	</header>
+	<!-- header_section - end
+		  ================================================== -->

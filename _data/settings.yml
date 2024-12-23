@@ -1,8 +1,8 @@
 # General Settings
-title: "Creative Agency - Dexfolio - Portfolio & Agency Template"
+title: "Marcel Moosbrugger"
 favicon: "/assets/images/logo/favicon.png"
-name: "dexfolio."
-description: "Dexfolio - Creative Website"
+name: "Marcel Moosbrugger"
+description: "Marcel Moosbrugger - Computer Science - Communication"
 
 # Logo
 logo_1: "/assets/images/logo/logo_white_2x.png"
@@ -10,13 +10,11 @@ logo_2: "/assets/images/logo/logo_black_2x.png"
 
 # Contact info
 contact_settings:
-  phone_number: "+1-541-754-5624"
   email: "hello@dexfolio.net.us"
-  email_2: "fusionlab.co@gmail.com"
 
 # Footer info
 footer_settings:
-  copyright_text: "2022 All Right Reserved by "
+  copyright_text: "2025 All Right Reserved by "
 
 # Google analytics code
 google_analytics:

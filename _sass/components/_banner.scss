@@ -140,6 +140,33 @@
 		background-position: center center;
 	}
 }
+
+.banner_style_2.marcel {
+	padding-left: 70px;
+	padding-right: 70px;
+	.container {
+		padding: 0;
+	}
+	h1 {
+		font-size: 52px;
+		color: #ffffff;
+		margin-bottom: 20px;
+
+		span {
+			display: block;
+			padding: 0;
+			-webkit-text-stroke-width: 0;
+			-webkit-text-fill-color: currentcolor;
+			-webkit-text-stroke-color: currentcolor;
+			color: $color_primary;
+			font-weight: normal;
+		}
+	}
+	.mission {
+		color: #ffffff;
+		text-transform: uppercase;
+	}
+}
 // Banner Style 2 - End
 
 // Banner Style 3 - Start
