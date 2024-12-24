@@ -10,6 +10,9 @@
 			<!-- single level navigation
      		 ================================================== -->
 			<div class="main_menu_inner collapse navbar-collapse" id="main_menu_dropdown">
+				<button class="mobile_menu_close_btn navbar-toggler" type="button" aria-controls="main_menu_dropdown" aria-expanded="false" aria-label="Close navigation">
+					<i class="fal fa-times"></i>
+				</button>
 				<ul class="main_menu_list ul_li text-uppercase">
 					{% for item in site.data.menus.toc %}
 					<li class="nav-item">
@@ -20,7 +23,7 @@
 					{% endfor %}
 				</ul>
 			</div>
-			<button class="mobile_menu_btn navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#main_menu_dropdown" aria-controls="main_menu_dropdown" aria-expanded="false" aria-label="Toggle navigation">
+			<button class="mobile_menu_btn navbar-toggler" type="button" aria-controls="main_menu_dropdown" aria-expanded="false" aria-label="Show navigation">
 				<i class="fal fa-bars"></i>
 			</button>
 		</nav>

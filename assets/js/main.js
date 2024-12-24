@@ -8,6 +8,16 @@
 (function($) {
   "use strict";
 
+
+  $("header.marcel .mobile_menu_btn").on("click", function() {
+    $("header.marcel .main_menu_inner").addClass("show");
+  });
+
+  $("header.marcel .mobile_menu_close_btn").on("click", function() {
+    $("header.marcel .main_menu_inner").removeClass("show");
+  });
+
+
   // Back To Top - Start
   // --------------------------------------------------
   $(window).scroll(function() {
