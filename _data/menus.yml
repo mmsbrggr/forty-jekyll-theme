@@ -1,9 +1,6 @@
 toc:
-  - title: About
-    url: /about
-
   - title: Blog
-    url: /blog
+    url: https://medium.com/@mmsbrggr
 
-  - title: Contact
-    url: /contact
+  - title: Newsletter
+    url: /newsletter
