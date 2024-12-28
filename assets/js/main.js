@@ -17,6 +17,16 @@
     $("header.marcel .main_menu_inner").removeClass("show");
   });
 
+  var X = [];
+  X[0] = "marcelmoosbrugger";
+  X[1] = "gmail.com";
+  $('.mail-me').click(function(event) {
+    event.stopPropagation();
+    event.preventDefault();
+    let location = 'mailto:' + X[0] + '@' + X[1];
+    window.location.href = location;
+  });
+
 
   // Back To Top - Start
   // --------------------------------------------------
